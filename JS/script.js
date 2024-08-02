@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (index < text.length) {
             typewriterElement.textContent += text.charAt(index);
             index++;
-            setTimeout(type, 60); 
+            setTimeout(type, 40); 
         }
     }
 
