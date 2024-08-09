@@ -34,4 +34,30 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.log('Typewriter element not found');
     }
+
+    const modal = document.getElementById("imageModal");
+    const img = document.querySelector(".preview-img");
+    const modalImg = document.getElementById("imgPreview");
+    const closeModal = document.querySelector(".close");
+
+    img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.classList.add("animate");
+    }
+
+
+    closeModal.onclick = function () {
+        modal.style.display = "none";
+        modalImg.classList.remove("animate");
+    }
+
+        
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            modalImg.classList.remove("animate");
+        }
+    }
+
 });

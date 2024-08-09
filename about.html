@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="CSS/style.css" rel="stylesheet">
-        <title>Volley Talents</title>
-    </head>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet">
+    <title>Über uns - Volley Talents</title>
+</head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a href="index.html" class="logo-link">
-                <img src="Images/Logo.png" alt="logo" class="logo">
+            <a href="index.html" class="navbar-brand">
+                <img src="Images/Logo.png" alt="Logo" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,44 +21,123 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">Über uns</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="times.html">Trainingszeiten</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Kontakt</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="costs.html">Kosten</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="trainers.html">Trainer</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Über uns</a></li>
+                    <li class="nav-item"><a class="nav-link" href="times.html">Trainingszeiten</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="costs.html">Kosten</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trainers.html">Trainer</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header>
 
+    <header class="about-header">
+        <div class="container">
+            <h1>Unsere Geschichte</h1>
+            <p>Erfahre mehr über die Vision und den Weg von Volley Talents Winterthur Zürich</p>
+        </div>
     </header>
-    <main>
-        
+
+
+    <main class="about-main">
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <h2 class="mb-3">Wer wir sind</h2>
+                <p>Volley Talents Winterthur Zürich wurde 2021 gegründet mit dem Ziel, talentierten Jugendlichen der
+                    Sekundarstufe 2 im Kanton Zürich eine Plattform zu bieten, um ihre Volleyballfähigkeiten zu fördern
+                    und sie auf das Niveau der nationalen Ligen vorzubereiten.</p>
+                <p>Ab dem 19. August 2024 erweitern wir unser Angebot um die "Rookies". Dieses Förderprogramm richtet
+                    sich an Jugendliche der 1. Sekundarstufe und bietet den Jugendlichen und ihren Eltern kürzere
+                    Reisezeiten.</p>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <img src="Images/Entwicklungsschritt.jpg" alt="Entwicklungsschritt" class="img-fluid rounded shadow-sm preview-img">
+            </div>
+            
+            <div id="imageModal" class="image-modal">
+                <span class="close">&times;</span>
+                <img class="image-modal-content" id="imgPreview">
+            </div>
+            
+            
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <h2 class="mb-3">Unser Ansatz</h2>
+                <p>Wir legen grossen Wert auf das Potenzial unserer Spieler, unabhängig von ihren aktuellen Fähigkeiten.
+                    Unsere Trainer achten auf verschiedene Faktoren wie Schnelligkeit, Sprungkraft, Ballgefühl und
+                    Lernbereitschaft. Das Wichtigste ist die Bereitschaft, kontinuierlich an sich zu arbeiten.</p>
+            </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-3">FAQs</h2>
+                <div class="accordion" id="faqs">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faq1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFaq1" aria-expanded="true" aria-controls="collapseFaq1">
+                                Muss ich meinen Verein verlassen, um bei euch mitzumachen?
+                            </button>
+                        </h3>
+                        <div id="collapseFaq1" class="accordion-collapse collapse show" aria-labelledby="faq1"
+                            data-bs-parent="#faqs">
+                            <div class="accordion-body">
+                                <p>Nein, auf keinen Fall, du musst ja auch irgendwo Meisterschaft spielen. Unser Angebot
+                                    ist ein reines Trainingsgefäss. Wir spielen keine Meisterschaft! Falls es
+                                    Überschneidungen der Clubtrainings mit den der unseren gibt, werden wir das mit dir
+                                    und deinem Verein, bzw. Trainer klären. Du wirst mindestens einmal in der Woche mit
+                                    deinem Stammteam trainieren können.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="faq2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFaq2" aria-expanded="false" aria-controls="collapseFaq2">
+                                Welches Niveau muss ich haben?
+                            </button>
+                        </h3>
+                        <div id="collapseFaq2" class="accordion-collapse collapse" aria-labelledby="faq2"
+                            data-bs-parent="#faqs">
+                            <div class="accordion-body">
+                                <p>Dein Potential weckt unser Interesse viel mehr, als das was du bereits kannst. Im
+                                    Volleyball ist die Körpergrösse sehr wichtig, weshalb das ein wichtiger Faktor ist.
+                                    Es ist aber nicht nur das entscheidend! Du kannst auch andere wichtige Faktoren
+                                    mitbringen, wie z.B. wenn du sehr schnell bist, hoch springen kannst, sehr
+                                    ballbegabt bist oder du einfach sehr lernwillig bist. Unsere Trainer sehen schnell,
+                                    was deine Stärke ist. Das wichtigste ist aber, dass du an dir selber arbeiten
+                                    willst, damit du dein Potential erreichst!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
     </main>
 
     <footer>
         <div class="footer-container">
             <div class="logo-container">
                 <img src="Images/Logo.png" alt="logo" class="footer-logo">
+                <br>
             </div>
             <div class="footer-nav-container">
                 <ul class="footer-nav">
-                    <li><a class="footer-link" href="about.html">Über uns</a></li>
+                    <li><a class="footer-link" href="index.html">Home</a></li>
+                    <li><a class="footer-link" href="about.html">Über Uns</a></li>
                     <li><a class="footer-link" href="times.html">Trainingszeiten</a></li>
-                    <li><a class="footer-link" href="contact.html">Kontakt</a></li>
                 </ul>
                 <ul class="footer-nav">
+                    <li><a class="footer-link" href="contact.html">Kontakt</a></li>
                     <li><a class="footer-link" href="costs.html">Kosten</a></li>
                     <li><a class="footer-link" href="trainers.html">Trainer</a></li>
                 </ul>
@@ -65,8 +146,8 @@
             <p>&copy; 2024 Volley Talents Winterthur Zürich</p>
         </div>
     </footer>
-
-    <script src="JS/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/script.js"></script>
 </body>
+
 </html>

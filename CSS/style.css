@@ -1,4 +1,3 @@
-html,
 body {
     height: 100%;
     margin: 0;
@@ -7,6 +6,105 @@ body {
     flex-direction: column;
     color: #263238;
 }
+
+.about-main {
+    flex: 1;
+    display: flex;
+    margin: 2rem;
+    background-color: #ffffff;
+}
+
+.about-header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 6rem 1.5rem;
+    position: relative;
+    text-align: center;
+}
+
+.about-header h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.about-header p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #e0e0e0;
+}
+
+.accordion-button {
+    font-size: 1.1rem;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.accordion-button:not(.collapsed) {
+    color: #1e88e5;
+    background-color: #e9ecef;
+}
+
+.accordion-button:hover {
+    color: #ffffff;
+    background-color: #1e88e5; 
+}
+
+.accordion-body {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.preview-img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.preview-img:hover {
+    transform: scale(1.05);
+}
+
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.image-modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    transition: transform 0.3s ease;
+}
+
+.image-modal-content.animate {
+    transform: scale(1.1);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+}
+
 
 main {
     flex: 1;
@@ -66,6 +164,7 @@ header h1 {
 header p {
     font-size: 1.5rem;
 }
+
 footer {
     background-color: #fff;
     color: #263238;
@@ -119,11 +218,9 @@ p {
     margin: 0;
 }
 
-
 .logo:hover {
     transform: scale(1.1);
 }
-
 
 .logo {
     width: 100px;
@@ -131,10 +228,6 @@ p {
     margin-right: 20px;
     margin-top: 5px;
     transition: all 0.5s;
-}
-
-.logo:hover {
-    transform: scale(1.1);
 }
 
 .dropdown-menu {
