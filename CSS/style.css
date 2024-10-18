@@ -479,13 +479,13 @@ td {
     background-color: #f8f9fa;
     transform: rotateY(180deg);
     padding: 15px;
-    overflow-y: auto;
+    overflow-y: auto; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-start; 
     box-shadow: 10px 10px 15px black;
-    overflow: hidden; 
+    max-height: 100%;
     white-space: normal; 
 }
 
@@ -501,6 +501,7 @@ td {
 .flip-card-back p {
     font-size: 1.1rem;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .flip-card-back ul {
