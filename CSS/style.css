@@ -408,7 +408,7 @@ a:hover {
 }
 
 table {
-    width: 80%;
+    width: 90%;
     margin-bottom: 2rem;
 }
 
@@ -524,6 +524,7 @@ td {
         overflow-x: auto;
         white-space: nowrap;
         border: 0;
+        width: 100%;
     }
 
     th,

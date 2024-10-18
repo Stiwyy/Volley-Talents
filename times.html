@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="de">
 
 <head>
@@ -14,6 +14,18 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>Volley Talents</title>
+
+    <style>
+        main {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2vh;
+            background-color: #f0f4f8;
+        }
+    </style>
 </head>
 
 <body>
@@ -54,49 +66,51 @@
 
     <main>
         <h2 class="text-center">Trainingsplan</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th> </th>
-                        <th>Montag</th>
-                        <th>Dienstag</th>
-                        <th>Mittwoch</th>
-                        <th>Donnerstag</th>
-                        <th>Freitag</th>
-                        <th>Samstag</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="morning">
-                        <td>Vormittag</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><span class="highlight-rookie">Rookie+</span><br>08.00 - 10.00<br>Gutschick/Winterthur<br>Vakant</td>
-                        <td></td>
-                        <td><span class="highlight-rookie">Rookie</span><br>09.00 - 11.00<br>Sennhof<br>Filipe <br> <span class="highlight-talents">Talents</span><br>10.00 - 12.00 <br> Sennhof <br> Filipe</td>
-                    </tr>
-                    <tr class="afternoon">
-                        <td>Nachmittag</td>
-                        <td></td>
-                        <td><span class="highlight-rookie">Rookie+</span><br>13.00 - 15.00<br>Winterthur<br>Filipe</td>
-                        <td><span class="highlight-rookie">Rookie</span><br>13.45 - 16.15<br>Wiesendangen<br>Filipe</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr class="evening">
-                        <td>Abend</td>
-                        <td><span class="highlight-talents">Talents</span><br>20.00 - 22.00<br>Wiesendangen<br>Karsten</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><span class="highlight-talents">Talents</span><br>18.00 - 20.00<br>Sennhof<br>Filipe</td>
-                        <td><span class="highlight-talents">Talents</span><br>10.00 - 12.00<br>Sennhof<br>Filipe</td>
-                    </tr>
-                </tbody>
-            </table>
-        
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>Montag</th>
+                    <th>Dienstag</th>
+                    <th>Mittwoch</th>
+                    <th>Donnerstag</th>
+                    <th>Freitag</th>
+                    <th>Samstag</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="morning">
+                    <td>Vormittag</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="highlight-rookie">Rookie+</span><br>08.00 - 10.00<br>Gutschick/Winterthur<br>Vakant
+                    </td>
+                    <td></td>
+                    <td><span class="highlight-rookie">Rookie</span><br>09.00 - 11.00<br>Sennhof<br>Filipe <br> <span
+                            class="highlight-talents">Talents</span><br>10.00 - 12.00 <br> Sennhof <br> Filipe</td>
+                </tr>
+                <tr class="afternoon">
+                    <td>Nachmittag</td>
+                    <td></td>
+                    <td><span class="highlight-rookie">Rookie+</span><br>13.00 - 15.00<br>Winterthur<br>Filipe</td>
+                    <td><span class="highlight-rookie">Rookie</span><br>13.45 - 16.15<br>Wiesendangen<br>Filipe</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="evening">
+                    <td>Abend</td>
+                    <td><span class="highlight-talents">Talents</span><br>20.00 - 22.00<br>Wiesendangen<br>Karsten</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="highlight-talents">Talents</span><br>18.00 - 20.00<br>Sennhof<br>Filipe</td>
+                    <td><span class="highlight-talents">Talents</span><br>10.00 - 12.00<br>Sennhof<br>Filipe</td>
+                </tr>
+            </tbody>
+        </table>
+
 
         <section class="container mt-5">
             <h2 class="text-center mb-5">Trainingsanforderungen</h2>
@@ -109,10 +123,13 @@
                             </div>
                             <div class="flip-card-back p-4">
                                 <h3 class="text-primary">Rookies</h3>
-                                <p>Für die Rookies ist eine Trainingszeit von <strong>6,5 Stunden pro Woche</strong> verpflichtend:</p>
+                                <p>Für die Rookies ist eine Trainingszeit von <strong>6,5 Stunden pro Woche</strong>
+                                    verpflichtend:</p>
                                 <ul class="list-group list-group-flush mb-3">
-                                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> <strong>4,5 Stunden</strong> im Fördergefäss</li>
-                                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> <strong>2 Stunden</strong> im Stammverein</li>
+                                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i>
+                                        <strong>4,5 Stunden</strong> im Fördergefäss</li>
+                                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i>
+                                        <strong>2 Stunden</strong> im Stammverein</li>
                                 </ul>
                             </div>
                         </div>
@@ -128,15 +145,17 @@
                                 <h3 class="text-danger">Rookies+</h3>
                                 <p>Rookies+ können bis zu <strong>4 zusätzliche Stunden</strong> trainieren:</p>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><i class="bi bi-calendar-event-fill text-info"></i> <strong>Dienstag:</strong> 13:00 - 15:00 in Römerstrasse</li>
-                                    <li class="list-group-item"><i class="bi bi-calendar-event-fill text-info"></i> <strong>Donnerstag:</strong> 08:00 - 10:00 im Gutschick</li>
+                                    <li class="list-group-item"><i class="bi bi-calendar-event-fill text-info"></i>
+                                        <strong>Dienstag:</strong> 13:00 - 15:00 in Römerstrasse</li>
+                                    <li class="list-group-item"><i class="bi bi-calendar-event-fill text-info"></i>
+                                        <strong>Donnerstag:</strong> 08:00 - 10:00 im Gutschick</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        
+
             <div class="row g-4 mt-4">
                 <div class="col-md-6">
                     <div class="flip-card">
@@ -146,15 +165,20 @@
                             </div>
                             <div class="flip-card-back p-4">
                                 <h3 class="text-primary">Talents</h3>
-                                <p>Für Talents ist eine Trainingszeit von <strong>8 Stunden</strong> pro Woche verpflichtend:</p>
+                                <p>Für Talents ist eine Trainingszeit von <strong>8 Stunden</strong> pro Woche
+                                    verpflichtend:</p>
                                 <ul class="list-group list-group-flush mb-3">
-                                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> <strong>6 Stunden</strong> im Fördergefäss</li>
-                                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> <strong>2 Stunden</strong> im Stammverein</li>
+                                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i>
+                                        <strong>6 Stunden</strong> im Fördergefäss</li>
+                                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i>
+                                        <strong>2 Stunden</strong> im Stammverein</li>
                                 </ul>
                                 <p>Zusätzliche <strong>4 freiwillige Stunden</strong> möglich:</p>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><i class="bi bi-calendar-event-fill text-info"></i> <strong>Dienstag:</strong> 13:00 - 15:00 in Römerstrasse</li>
-                                    <li class="list-group-item"><i class="bi bi-calendar-event-fill text-info"></i> <strong>Donnerstag:</strong> 08:00 - 10:00 im Gutschick</li>
+                                    <li class="list-group-item"><i class="bi bi-calendar-event-fill text-info"></i>
+                                        <strong>Dienstag:</strong> 13:00 - 15:00 in Römerstrasse</li>
+                                    <li class="list-group-item"><i class="bi bi-calendar-event-fill text-info"></i>
+                                        <strong>Donnerstag:</strong> 08:00 - 10:00 im Gutschick</li>
                                 </ul>
                             </div>
                         </div>
@@ -162,7 +186,7 @@
                 </div>
             </div>
         </section>
-        
+        <div class="spacer"></div>
     </main>
 
     <footer>
