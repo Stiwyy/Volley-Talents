@@ -278,11 +278,11 @@ p {
 @media (max-width: 768px) {
     .navbar-brand,
     .nav-link {
-        font-size: 1.2rem; 
+        font-size: 3rem; 
     }
 
     .logo {
-        width: 80px;
+        width: 160px;
     }
 
     .main-content-right,
@@ -292,7 +292,7 @@ p {
     }
 
     .main p {
-        font-size: 1.1rem; 
+        font-size: 1.7rem; 
         line-height: 1.2; 
     }
 
@@ -438,21 +438,6 @@ td {
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
-    td,
-    th {
-        padding: 8px;
-    }
-
-    th {
-        font-size: 1rem;
-    }
-
-    td {
-        font-size: 0.95rem; 
-    }
-}
-
 .flip-card {
     background-color: transparent;
     width: 100%;
@@ -547,10 +532,10 @@ td {
     }
 
     th {
-        font-size: 1rem; 
+        font-size: 1.05rem; 
     }
 
     td {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 }
