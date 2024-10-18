@@ -437,7 +437,6 @@ td {
     color: #4a4ac7;
     font-weight: bold;
 }
-
 .flip-card {
     background-color: transparent;
     width: 100%;
@@ -468,6 +467,7 @@ td {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px; 
 }
 
 .flip-card-front {
@@ -479,14 +479,14 @@ td {
     background-color: #f8f9fa;
     transform: rotateY(180deg);
     padding: 15px;
-    overflow: hidden;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    max-height: 300px;
-    overflow-y: auto;
     box-shadow: 10px 10px 15px black;
+    overflow: hidden; 
+    white-space: normal; 
 }
 
 .flip-card h3 {
@@ -539,3 +539,4 @@ td {
         font-size: 1rem;
     }
 }
+
