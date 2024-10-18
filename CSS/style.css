@@ -38,7 +38,7 @@ body {
 
 .accordion-button {
     font-size: 1.1rem;
-    transition: background-color 0.3s, color 0.3s; 
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .accordion-button:not(.collapsed) {
@@ -48,7 +48,7 @@ body {
 
 .accordion-button:hover {
     color: #ffffff;
-    background-color: #1e88e5; 
+    background-color: #1e88e5;
 }
 
 .accordion-body {
@@ -113,7 +113,6 @@ main {
     align-items: center;
     margin-top: 42vh;
     background-color: #f0f4f8;
-    width: 100%; /* Neue Regel hinzugefügt */
 }
 
 .main-content-right,
@@ -265,6 +264,7 @@ p {
         opacity: 0;
         transform: translateY(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -276,6 +276,7 @@ p {
 }
 
 @media (max-width: 768px) {
+
     .navbar-brand,
     .nav-link {
         font-size: 1rem;
@@ -290,6 +291,7 @@ p {
     header .container {
         width: 100%;
     }
+
     .main p {
         font-size: 0.875rem;
         line-height: 1;
@@ -300,10 +302,10 @@ p {
     }
 
     .flip-card-back {
-        padding: 10px; /* Padding anpassen */
-        overflow: hidden; /* Verhindert Überlauf */
-        text-overflow: ellipsis; /* Zeigt "..." für Überlauf an */
-        white-space: nowrap; /* Verhindert Zeilenumbruch */
+        padding: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 }
 
@@ -373,19 +375,30 @@ a:hover {
 }
 
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: #263238; }
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #263238;
+    }
 }
 
 table {
-    width: 100%;
+    width: 80%;
     margin-bottom: 2rem;
-    border-collapse: collapse;
 }
 
 th,
@@ -401,19 +414,7 @@ th {
 }
 
 td {
-    background-color: #f2f2f2;
-}
-
-.morning {
-    background-color: #e6f7ff;
-}
-
-.afternoon {
-    background-color: #fff7e6;
-}
-
-.evening {
-    background-color: #f9e6ff;
+    background-color: white;
 }
 
 .highlight-rookie {
@@ -427,6 +428,7 @@ td {
 }
 
 @media (max-width: 768px) {
+
     td,
     th {
         padding: 8px;
@@ -473,10 +475,14 @@ td {
 .flip-card-back {
     background-color: #f8f9fa;
     transform: rotateY(180deg);
-    padding: 20px;
-    text-align: left;
-    border-radius: 15px;
-    overflow: hidden; /* Verhindert Überlauf */
+    padding: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-height: 300px;
+    box-shadow: 10px 10px 15px black;
 }
 
 .flip-card h3 {
@@ -485,6 +491,12 @@ td {
 
 .flip-card-back h3 {
     font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.flip-card-back p {
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 .flip-card-back ul {
@@ -494,6 +506,21 @@ td {
 
 .flip-card-back ul li {
     padding: 5px 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .flip-card-back h3 {
+        font-size: 1.25rem;
+    }
+
+    .flip-card-back p {
+        font-size: 0.9rem;
+    }
+}
+
+* {
+    box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
