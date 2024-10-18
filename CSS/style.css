@@ -105,7 +105,6 @@ body {
     color: #bbb;
 }
 
-
 main {
     flex: 1;
     display: flex;
@@ -114,6 +113,7 @@ main {
     align-items: center;
     margin-top: 42vh;
     background-color: #f0f4f8;
+    width: 100%; /* Neue Regel hinzugefügt */
 }
 
 .main-content-right,
@@ -298,6 +298,13 @@ p {
     .image-placeholder {
         width: 100%;
     }
+
+    .flip-card-back {
+        padding: 10px; /* Padding anpassen */
+        overflow: hidden; /* Verhindert Überlauf */
+        text-overflow: ellipsis; /* Zeigt "..." für Überlauf an */
+        white-space: nowrap; /* Verhindert Zeilenumbruch */
+    }
 }
 
 @media (min-width: 768px) {
@@ -374,7 +381,6 @@ a:hover {
     from, to { border-color: transparent; }
     50% { border-color: #263238; }
 }
-
 
 table {
     width: 100%;
@@ -470,6 +476,7 @@ td {
     padding: 20px;
     text-align: left;
     border-radius: 15px;
+    overflow: hidden; /* Verhindert Überlauf */
 }
 
 .flip-card h3 {
