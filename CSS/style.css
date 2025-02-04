@@ -23,7 +23,7 @@ body {
 }
 
 .about-header h1 {
-    font-size: 3.5rem; 
+    font-size: 3.5rem;
     line-height: 1.2;
     font-weight: 700;
     color: #ffffff;
@@ -31,13 +31,13 @@ body {
 }
 
 .about-header p {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     font-weight: 300;
     color: #e0e0e0;
 }
 
 .accordion-button {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 .accordion-body {
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
     line-height: 1.6;
 }
 
@@ -154,7 +154,7 @@ header .container {
 
 header h1 {
     margin: 0;
-    font-size: 2.8rem; 
+    font-size: 2.8rem;
     line-height: 1.2;
     color: #263238;
     word-wrap: break-word;
@@ -205,7 +205,7 @@ footer {
 .footer-link {
     color: #263238;
     text-decoration: none;
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
@@ -276,9 +276,10 @@ p {
 }
 
 @media (max-width: 768px) {
+
     .navbar-brand,
     .nav-link {
-        font-size: 3rem; 
+        font-size: 3rem;
     }
 
     .logo {
@@ -292,8 +293,8 @@ p {
     }
 
     .main p {
-        font-size: 1.7rem; 
-        line-height: 1.2; 
+        font-size: 1.7rem;
+        line-height: 1.2;
     }
 
     .image-placeholder {
@@ -307,7 +308,7 @@ p {
         white-space: nowrap;
     }
 
-    
+
     .flip-card-back h3 {
         font-size: 1.5rem;
     }
@@ -397,6 +398,7 @@ a:hover {
 }
 
 @keyframes blink-caret {
+
     from,
     to {
         border-color: transparent;
@@ -437,6 +439,7 @@ td {
     color: #4a4ac7;
     font-weight: bold;
 }
+
 .flip-card {
     background-color: transparent;
     width: 100%;
@@ -467,7 +470,7 @@ td {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px; 
+    padding: 10px;
 }
 
 .flip-card-front {
@@ -479,14 +482,14 @@ td {
     background-color: #f8f9fa;
     transform: rotateY(180deg);
     padding: 15px;
-    overflow-y: auto; 
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start; 
+    align-items: flex-start;
     box-shadow: 10px 10px 15px black;
     max-height: 100%;
-    white-space: normal; 
+    white-space: normal;
 }
 
 .flip-card h3 {
@@ -511,7 +514,7 @@ td {
 
 .flip-card-back ul li {
     padding: 5px 0;
-    font-size: 1rem; 
+    font-size: 1rem;
 }
 
 * {
@@ -534,7 +537,7 @@ td {
     }
 
     th {
-        font-size: 1.05rem; 
+        font-size: 1.05rem;
     }
 
     td {
@@ -556,51 +559,51 @@ td {
     display: flex;
     align-items: center;
     justify-content: center;
- }
-  
-  .sv-hero-overlay {
+}
+
+.sv-hero-overlay {
     background: rgba(0, 45, 114, 0.6);
     padding: 20px 40px;
     border-radius: 10px;
     text-align: center;
-  }
-  
-  .sv-hero-title {
+}
+
+.sv-hero-title {
     color: #fff;
     font-size: 3em;
     margin: 0;
     font-weight: bold;
-  }
-  
-  .sv-hero-subtitle {
+}
+
+.sv-hero-subtitle {
     color: #ddd;
     font-size: 1.5em;
     margin-top: 10px;
-  }
-  
-  
-  .sv-section-title {
+}
+
+
+.sv-section-title {
     font-size: 2.5em;
     color: #002D72;
     margin-bottom: 10px;
-  }
-  
-  .sv-section-intro {
+}
+
+.sv-section-intro {
     font-size: 1.2em;
     color: #555;
     max-width: 800px;
     margin: 0 auto;
-  }
-  
-  #sv-trainer-container {
+}
+
+#sv-trainer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     padding: 20px;
-  }
-  
-  .sv-trainer-card {
+}
+
+.sv-trainer-card {
     width: 320px;
     background-color: #fff;
     border: none;
@@ -611,129 +614,122 @@ td {
     opacity: 0;
     animation: slideIn 0.8s forwards;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .sv-trainer-card:nth-child(1) {
+}
+
+.sv-trainer-card:nth-child(1) {
     animation-delay: 0.3s;
-  }
-  .sv-trainer-card:nth-child(2) {
+}
+
+.sv-trainer-card:nth-child(2) {
     animation-delay: 0.6s;
-  }
-  .sv-trainer-card:nth-child(3) {
+}
+
+.sv-trainer-card:nth-child(3) {
     animation-delay: 0.9s;
-  }
-  
-  @keyframes slideIn {
+}
+
+@keyframes slideIn {
     to {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
-  
-  .sv-trainer-card:hover {
+}
+
+.sv-trainer-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .sv-trainer-img {
+}
+
+.sv-trainer-img {
     width: 100%;
     height: 220px;
     object-fit: cover;
-  }
-  
-  .sv-trainer-content {
+}
+
+.sv-trainer-content {
     padding: 20px;
-  }
-  
-  .sv-trainer-name {
+}
+
+.sv-trainer-name {
     color: #002D72;
     font-size: 1.5em;
     margin-bottom: 10px;
-  }
-  
-  .sv-trainer-info {
+}
+
+.sv-trainer-info {
     color: #00509e;
     font-size: 1em;
     margin-bottom: 15px;
-  }
-  
-  .sv-trainer-desc {
+}
+
+.sv-trainer-desc {
     color: #666;
     font-size: 0.95em;
     line-height: 1.5;
-  }
-/* Wrapper für alle Spalten */
+}
+
 .rookie-talents-wrapper {
     display: flex;
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
-  }
-  
-  /* Einzigartige Spalten-Klassen */
-  .rookie-column,
-  .rookie-center-column,
-  .talents-column {
+}
+
+.rookie-column,
+.rookie-center-column,
+.talents-column {
     flex: 1;
     padding: 0 10px;
     box-sizing: border-box;
-  }
-  
-  /* Gestrichelte Trennung zwischen den Spalten (außer der letzten Spalte) */
-  .rookie-column:not(:last-child),
-  .rookie-center-column:not(:last-child) {
+}
+
+.rookie-column:not(:last-child),
+.rookie-center-column:not(:last-child) {
     border-right: 2px dashed black;
-  }
-  
-  /* Allgemeine Box-Styles */
-  .rookie-box {
+}
+
+.rookie-box {
     background-color: #dce8f8;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     padding: 20px;
     text-align: center;
     box-sizing: border-box;
     margin-bottom: 20px;
-  }
-  
-  /* Boxen verlängern */
-  .rookie-box.large {
-    height: 300px; /* Beispielhöhe für größere Boxen */
-  }
-  
-  .rookie-box.small {
-    height: 150px; /* Beispielhöhe für kleinere Boxen */
-  }
-  
-  /* Überschriften-Styling */
-  .rookie-column h2,
-  .rookie-center-column h2,
-  .talents-column h2 {
+}
+
+.rookie-box.large {
+    height: 300px;
+}
+
+.rookie-box.small {
+    height: 150px;
+}
+
+.rookie-column h2,
+.rookie-center-column h2,
+.talents-column h2 {
     margin: 0;
     padding: 10px 0;
     font-size: 1.5em;
-  }
-  
-  /* Linke Spalte: "Rookie+" – der Plus-Teil in Pink */
-  .rookie-column h2 {
+}
+
+.rookie-column h2 {
     color: darkblue;
-  }
-  
-  .rookie-column h2 .plus {
+}
+
+.rookie-column h2 .plus {
     color: pink;
-  }
-  
-  /* Mittlere Spalte: "Rookie" in Dunkelblau */
-  .rookie-center-column h2 {
+}
+
+.rookie-center-column h2 {
     color: darkblue;
-  }
-  
-  /* Rechte Spalte: "Talents" in hellem Blau */
-  .talents-column h2 {
+}
+
+.talents-column h2 {
     color: #5aa9e6;
-  }
-  
-  /* Training-Informationen unten */
-  .training-info {
+}
+
+.training-info {
     background-color: green;
     color: white;
     text-align: center;
@@ -744,5 +740,45 @@ td {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-  }
-  
+}
+
+@media (max-width: 768px) {
+    .rookie-talents-wrapper {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .rookie-column,
+    .rookie-center-column,
+    .talents-column {
+        width: 100%;
+        padding: 10px 0;
+        border: none;
+        margin: 0;
+    }
+
+    .rookie-box.large,
+    .rookie-box.small {
+        height: auto;
+    }
+
+    .rookie-column h2,
+    .rookie-center-column h2,
+    .talents-column h2 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .training-info {
+        width: 90%;
+        font-size: 16px;
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .rookie-column:not(:last-child),
+    .rookie-center-column:not(:last-child) {
+        border-right: none;
+    }
+}
