@@ -553,12 +553,10 @@ td {
 .sv-hero {
     position: relative;
     background-position: center;
-    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
-  }
+ }
   
   .sv-hero-overlay {
     background: rgba(0, 45, 114, 0.6);
@@ -663,5 +661,88 @@ td {
     color: #666;
     font-size: 0.95em;
     line-height: 1.5;
+  }
+/* Wrapper für alle Spalten */
+.rookie-talents-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Einzigartige Spalten-Klassen */
+  .rookie-column,
+  .rookie-center-column,
+  .talents-column {
+    flex: 1;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Gestrichelte Trennung zwischen den Spalten (außer der letzten Spalte) */
+  .rookie-column:not(:last-child),
+  .rookie-center-column:not(:last-child) {
+    border-right: 2px dashed black;
+  }
+  
+  /* Allgemeine Box-Styles */
+  .rookie-box {
+    background-color: #dce8f8;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  /* Boxen verlängern */
+  .rookie-box.large {
+    height: 300px; /* Beispielhöhe für größere Boxen */
+  }
+  
+  .rookie-box.small {
+    height: 150px; /* Beispielhöhe für kleinere Boxen */
+  }
+  
+  /* Überschriften-Styling */
+  .rookie-column h2,
+  .rookie-center-column h2,
+  .talents-column h2 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 1.5em;
+  }
+  
+  /* Linke Spalte: "Rookie+" – der Plus-Teil in Pink */
+  .rookie-column h2 {
+    color: darkblue;
+  }
+  
+  .rookie-column h2 .plus {
+    color: pink;
+  }
+  
+  /* Mittlere Spalte: "Rookie" in Dunkelblau */
+  .rookie-center-column h2 {
+    color: darkblue;
+  }
+  
+  /* Rechte Spalte: "Talents" in hellem Blau */
+  .talents-column h2 {
+    color: #5aa9e6;
+  }
+  
+  /* Training-Informationen unten */
+  .training-info {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
   
