@@ -569,6 +569,10 @@ td {
 }
 
 .sv-hero-title {
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
+    hyphens: auto;
     color: #fff;
     font-size: 3em;
     margin: 0;
@@ -776,7 +780,7 @@ td {
         padding: 15px;
         text-align: center;
     }
-    
+
     .rookie-column:not(:last-child),
     .rookie-center-column:not(:last-child) {
         border-right: none;
